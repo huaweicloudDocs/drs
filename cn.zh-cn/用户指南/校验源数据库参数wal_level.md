@@ -15,10 +15,10 @@
 <td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.2.1 "><p id="p16970716173516"><a name="p16970716173516"></a><a name="p16970716173516"></a>源数据库参数wal_level配置错误，导致迁移失败。</p>
 </td>
 </tr>
-<tr id="row212432224711"><th class="firstcol" rowspan="3" valign="top" width="11%" id="mcps1.2.3.3.1"><p id="p1412462211472"><a name="p1412462211472"></a><a name="p1412462211472"></a><strong id="b111246227470"><a name="b111246227470"></a><a name="b111246227470"></a>失败提示及处理建议</strong></p>
+<tr id="row212432224711"><th class="firstcol" rowspan="3" valign="top" width="11%" id="mcps1.2.3.3.1"><p id="p1412462211472"><a name="p1412462211472"></a><a name="p1412462211472"></a><strong id="b111246227470"><a name="b111246227470"></a><a name="b111246227470"></a>失败提示及<strong id="b55807361765"><a name="b55807361765"></a><a name="b55807361765"></a>处理建议</strong></strong></p>
 </th>
 <td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.3.1 "><p id="p10238432105217"><a name="p10238432105217"></a><a name="p10238432105217"></a><strong id="b158710141570"><a name="b158710141570"></a><a name="b158710141570"></a>失败原因</strong>：源数据库参数wal_level配置错误。</p>
-<p id="p1755594465312"><a name="p1755594465312"></a><a name="p1755594465312"></a><strong id="b143301751711"><a name="b143301751711"></a><a name="b143301751711"></a>处理建议</strong>：源数据库版本是9.5的时候，参数wal_level必须是配置成hot_standby，源数据库版本是9.6的时候，参数wal_level必须是配置成replica。建议修改配置文件postgresql.conf中的<span class="parmname" id="parmname98930259332"><a name="parmname98930259332"></a><a name="parmname98930259332"></a><b>wal_level</b></span>参数，重启数据库生效。</p>
+<p id="p1755594465312"><a name="p1755594465312"></a><a name="p1755594465312"></a><strong id="b143301751711"><a name="b143301751711"></a><a name="b143301751711"></a>处理建议</strong>：源数据库版本是9.5的时候，参数wal_level必须是配置成hot_standby，源数据库版本是9.6的时候，参数wal_level必须是配置成replica。建议修改配置文件postgresql.conf中的<span class="parmname" id="parmname98930259332"><a name="parmname98930259332"></a><a name="parmname98930259332"></a>“wal_level”</span>参数，重启数据库生效。</p>
 </td>
 </tr>
 <tr id="row7103191644817"><td class="cellrowborder" valign="top" headers="mcps1.2.3.3.1 "><p id="p79614275530"><a name="p79614275530"></a><a name="p79614275530"></a><strong id="b3838321145715"><a name="b3838321145715"></a><a name="b3838321145715"></a>失败原因</strong>：用户基本权限不足。</p>
