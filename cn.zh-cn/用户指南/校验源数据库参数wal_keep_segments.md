@@ -1,6 +1,6 @@
 # 校验源数据库参数wal\_keep\_segments<a name="drs_11_0058"></a>
 
-## PostgreSQL数据库<a name="section96361428429"></a>
+## PostgreSQL迁移场景<a name="section96361428429"></a>
 
 **表 1**  校验源数据库参数wal\_keep\_segments
 
@@ -15,7 +15,7 @@
 <td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.2.1 "><p id="p656563214319"><a name="p656563214319"></a><a name="p656563214319"></a>源数据库wal_keep_segments参数值设置过小，导致迁移失败。</p>
 </td>
 </tr>
-<tr id="row45652032164319"><th class="firstcol" rowspan="4" valign="top" width="11%" id="mcps1.2.3.3.1"><p id="p1556583254317"><a name="p1556583254317"></a><a name="p1556583254317"></a><strong id="b6565832204317"><a name="b6565832204317"></a><a name="b6565832204317"></a>失败提示及处理建议</strong></p>
+<tr id="row45652032164319"><th class="firstcol" rowspan="4" valign="top" width="11%" id="mcps1.2.3.3.1"><p id="p1556583254317"><a name="p1556583254317"></a><a name="p1556583254317"></a><strong id="b6565832204317"><a name="b6565832204317"></a><a name="b6565832204317"></a>失败提示及<strong id="b55807361765"><a name="b55807361765"></a><a name="b55807361765"></a>处理建议</strong></strong></p>
 </th>
 <td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.3.1 "><p id="p58679261532"><a name="p58679261532"></a><a name="p58679261532"></a><strong id="b1466642645714"><a name="b1466642645714"></a><a name="b1466642645714"></a>失败原因</strong>：wal_keep_segments参数设置过小。</p>
 <p id="p1512182855417"><a name="p1512182855417"></a><a name="p1512182855417"></a><strong id="b1816517188"><a name="b1816517188"></a><a name="b1816517188"></a>处理建议</strong>：建议将wal_keep_segments 值至少调整为(源库大小×5%&divide;16)，如果源库业务较繁忙相应的增加这个值。</p>

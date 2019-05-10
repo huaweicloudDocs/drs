@@ -1,6 +1,6 @@
 # 校验源数据库参数max\_wal\_senders<a name="drs_11_0053"></a>
 
-## PostgreSQL数据库<a name="section19232412143112"></a>
+## PostgreSQL迁移场景<a name="section19232412143112"></a>
 
 **表 1**  校验源数据库参数max\_wal\_senders
 
@@ -15,10 +15,10 @@
 <td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.2.1 "><p id="p15372705185323"><a name="p15372705185323"></a><a name="p15372705185323"></a>源数据库max_wal_senders参数值必须大于0，否则，可能会导致迁移失败。</p>
 </td>
 </tr>
-<tr id="row212432224711"><th class="firstcol" rowspan="3" valign="top" width="11%" id="mcps1.2.3.3.1"><p id="p1412462211472"><a name="p1412462211472"></a><a name="p1412462211472"></a><strong id="b111246227470"><a name="b111246227470"></a><a name="b111246227470"></a>失败提示及处理建议</strong></p>
+<tr id="row212432224711"><th class="firstcol" rowspan="3" valign="top" width="11%" id="mcps1.2.3.3.1"><p id="p1412462211472"><a name="p1412462211472"></a><a name="p1412462211472"></a><strong id="b111246227470"><a name="b111246227470"></a><a name="b111246227470"></a>失败提示及<strong id="b15891153114115"><a name="b15891153114115"></a><a name="b15891153114115"></a>处理建议</strong></strong></p>
 </th>
-<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.3.1 "><p id="p4375933165516"><a name="p4375933165516"></a><a name="p4375933165516"></a><strong id="b81659016572"><a name="b81659016572"></a><a name="b81659016572"></a>失败原因</strong>：源数据库参数<span class="parmname" id="parmname12721175915335"><a name="parmname12721175915335"></a><a name="parmname12721175915335"></a><b>max_wal_senders</b></span>必须大于0。</p>
-<p id="p11593173210554"><a name="p11593173210554"></a><a name="p11593173210554"></a><strong id="b25021232367"><a name="b25021232367"></a><a name="b25021232367"></a>处理建议</strong>：建议修改配置文件postgresql.conf中的<span class="parmname" id="parmname75491120123313"><a name="parmname75491120123313"></a><a name="parmname75491120123313"></a><b>max_wal_senders</b></span>参数，重启数据库生效。</p>
+<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.3.1 "><p id="p4375933165516"><a name="p4375933165516"></a><a name="p4375933165516"></a><strong id="b81659016572"><a name="b81659016572"></a><a name="b81659016572"></a>失败原因</strong>：源数据库参数<span class="parmname" id="parmname12721175915335"><a name="parmname12721175915335"></a><a name="parmname12721175915335"></a>“max_wal_senders”</span>必须大于0。</p>
+<p id="p11593173210554"><a name="p11593173210554"></a><a name="p11593173210554"></a><strong id="b25021232367"><a name="b25021232367"></a><a name="b25021232367"></a>处理建议</strong>：建议修改配置文件postgresql.conf中的<span class="parmname" id="parmname75491120123313"><a name="parmname75491120123313"></a><a name="parmname75491120123313"></a>“max_wal_senders”</span>参数，重启数据库生效。</p>
 </td>
 </tr>
 <tr id="row12931536144811"><td class="cellrowborder" valign="top" headers="mcps1.2.3.3.1 "><p id="p79614275530"><a name="p79614275530"></a><a name="p79614275530"></a><strong id="b3838321145715"><a name="b3838321145715"></a><a name="b3838321145715"></a>失败原因</strong>：用户基本权限不足。</p>

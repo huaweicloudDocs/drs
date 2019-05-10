@@ -1,6 +1,6 @@
 # 源数据库Binlog格式检查<a name="drs_11_0015"></a>
 
-## 源数据库为MySQL数据库<a name="section79804282211"></a>
+## MySQL迁移场景<a name="section79804282211"></a>
 
 **表 1**  源数据库binlog格式检查
 
@@ -27,9 +27,11 @@
 </tr>
 <tr id="row1573613102214"><td class="cellrowborder" valign="top" headers="mcps1.2.3.3.1 "><p id="p957315132221"><a name="p957315132221"></a><a name="p957315132221"></a><strong id="b19195139234"><a name="b19195139234"></a><a name="b19195139234"></a>失败原因</strong>：源数据库的binlog格式不是row格式。</p>
 <p id="p428019342238"><a name="p428019342238"></a><a name="p428019342238"></a><strong id="b27655239328"><a name="b27655239328"></a><a name="b27655239328"></a>处理建议</strong>：</p>
-<a name="ul167621317280"></a><a name="ul167621317280"></a><ul id="ul167621317280"><li>如果您进行的是入云操作，请执行如下命令，修改源数据库binlog格式：<p id="p141937111816"><a name="p141937111816"></a><a name="p141937111816"></a><strong id="b1937819155182"><a name="b1937819155182"></a><a name="b1937819155182"></a>set global binlog_format='ROW'</strong></p>
-<p id="p0920194542919"><a name="p0920194542919"></a><a name="p0920194542919"></a>重启数据库后生效。</p>
-<p id="p95591339202213"><a name="p95591339202213"></a><a name="p95591339202213"></a>在row模式下，日志增长速率会变大，注意磁盘使用情况。</p>
+<a name="ul167621317280"></a><a name="ul167621317280"></a><ul id="ul167621317280"><li>如果您进行的是入云操作，请通过如下方法，修改源数据库binlog格式：<p id="p083872622114"><a name="p083872622114"></a><a name="p083872622114"></a>方法一：手动修改my.cnf配置文件，binlog_format=row，然后重启数据库。</p>
+<p id="p779162732116"><a name="p779162732116"></a><a name="p779162732116"></a>方法二：执行如下命令：</p>
+<p id="p49008715229"><a name="p49008715229"></a><a name="p49008715229"></a><strong id="b190047162217"><a name="b190047162217"></a><a name="b190047162217"></a>set global binlog_format='ROW'</strong></p>
+<p id="p0707920122115"><a name="p0707920122115"></a><a name="p0707920122115"></a>中断所有业务连接，并手动修改my.cnf配置文件，binlog_format=row。</p>
+<p id="p187071220142115"><a name="p187071220142115"></a><a name="p187071220142115"></a>在row模式下，日志增长速率会变大，注意磁盘使用情况。</p>
 </li><li>如果您进行的是出云操作，请使用<a href="https://support.huaweicloud.com/usermanual-rds/zh-cn_topic_0029128172.html" target="_blank" rel="noopener noreferrer">参数组功能</a>，将源数据库参数binlog_format修改为row格式，重启数据库后生效。</li></ul>
 </td>
 </tr>

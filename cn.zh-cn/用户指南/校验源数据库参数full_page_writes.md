@@ -1,6 +1,6 @@
 # 校验源数据库参数full\_page\_writes<a name="drs_11_0057"></a>
 
-## PostgreSQL数据库<a name="section2386145716404"></a>
+## PostgreSQL迁移场景<a name="section2386145716404"></a>
 
 **表 1**  校验源数据库参数full\_page\_writes
 
@@ -15,10 +15,10 @@
 <td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.2.1 "><p id="p16970716173516"><a name="p16970716173516"></a><a name="p16970716173516"></a>源数据库参数full_page_writes必须开启，否则，可能导致迁移失败。</p>
 </td>
 </tr>
-<tr id="row212432224711"><th class="firstcol" rowspan="3" valign="top" width="11%" id="mcps1.2.3.3.1"><p id="p1412462211472"><a name="p1412462211472"></a><a name="p1412462211472"></a><strong id="b111246227470"><a name="b111246227470"></a><a name="b111246227470"></a>失败提示及处理建议</strong></p>
+<tr id="row212432224711"><th class="firstcol" rowspan="3" valign="top" width="11%" id="mcps1.2.3.3.1"><p id="p1412462211472"><a name="p1412462211472"></a><a name="p1412462211472"></a><strong id="b111246227470"><a name="b111246227470"></a><a name="b111246227470"></a>失败提示及<strong id="b55807361765"><a name="b55807361765"></a><a name="b55807361765"></a>处理建议</strong></strong></p>
 </th>
-<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.3.1 "><p id="p7680162855311"><a name="p7680162855311"></a><a name="p7680162855311"></a><strong id="b1571420165712"><a name="b1571420165712"></a><a name="b1571420165712"></a>失败原因</strong>：源数据库参数<span class="parmname" id="parmname96901237203417"><a name="parmname96901237203417"></a><a name="parmname96901237203417"></a><b>full_page_writes</b></span>必须开启。</p>
-<p id="p18751578542"><a name="p18751578542"></a><a name="p18751578542"></a><strong id="b711814118810"><a name="b711814118810"></a><a name="b711814118810"></a>处理建议</strong>：建议修改配置文件postgresql.conf中的<span class="parmname" id="parmname1722114422337"><a name="parmname1722114422337"></a><a name="parmname1722114422337"></a><b>full_page_writes</b></span>参数为<span class="parmvalue" id="parmvalue1475316461332"><a name="parmvalue1475316461332"></a><a name="parmvalue1475316461332"></a><b>on</b></span>，重启数据库生效。</p>
+<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.3.1 "><p id="p7680162855311"><a name="p7680162855311"></a><a name="p7680162855311"></a><strong id="b1571420165712"><a name="b1571420165712"></a><a name="b1571420165712"></a>失败原因</strong>：源数据库参数<span class="parmname" id="parmname96901237203417"><a name="parmname96901237203417"></a><a name="parmname96901237203417"></a>“full_page_writes”</span>必须开启。</p>
+<p id="p18751578542"><a name="p18751578542"></a><a name="p18751578542"></a><strong id="b711814118810"><a name="b711814118810"></a><a name="b711814118810"></a>处理建议</strong>：建议修改配置文件postgresql.conf中的<span class="parmname" id="parmname1722114422337"><a name="parmname1722114422337"></a><a name="parmname1722114422337"></a>“full_page_writes”</span>参数为<span class="parmvalue" id="parmvalue1475316461332"><a name="parmvalue1475316461332"></a><a name="parmvalue1475316461332"></a>“on”</span>，重启数据库生效。</p>
 </td>
 </tr>
 <tr id="row10235710144711"><td class="cellrowborder" valign="top" headers="mcps1.2.3.3.1 "><p id="p79614275530"><a name="p79614275530"></a><a name="p79614275530"></a><strong id="b3838321145715"><a name="b3838321145715"></a><a name="b3838321145715"></a>失败原因</strong>：用户基本权限不足。</p>

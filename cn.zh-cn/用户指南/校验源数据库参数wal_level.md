@@ -1,6 +1,6 @@
 # 校验源数据库参数wal\_level<a name="drs_11_0054"></a>
 
-## PostgreSQL数据库<a name="section989017373417"></a>
+## PostgreSQL迁移场景<a name="section989017373417"></a>
 
 **表 1**  校验源数据库参数wal\_level
 

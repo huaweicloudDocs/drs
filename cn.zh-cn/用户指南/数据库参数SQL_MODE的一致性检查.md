@@ -1,6 +1,6 @@
 # 数据库参数SQL\_MODE的一致性检查<a name="drs_11_0059"></a>
 
-## MySQL数据库<a name="section052155410574"></a>
+## MySQL迁移场景<a name="section052155410574"></a>
 
 **表 1**  数据库参数SQL\_MODE的一致性检查
 

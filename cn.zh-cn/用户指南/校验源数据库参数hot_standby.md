@@ -1,6 +1,6 @@
 # 校验源数据库参数hot\_standby<a name="drs_11_0056"></a>
 
-## PostgreSQL数据库<a name="section1967111015391"></a>
+## PostgreSQL迁移场景<a name="section1967111015391"></a>
 
 **表 1**  校验源数据库参数hot\_standby
 
@@ -15,10 +15,10 @@
 <td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.2.1 "><p id="p16970716173516"><a name="p16970716173516"></a><a name="p16970716173516"></a>源数据库参数hot_standby必须开启，否则，可能导致迁移失败。</p>
 </td>
 </tr>
-<tr id="row212432224711"><th class="firstcol" rowspan="3" valign="top" width="11%" id="mcps1.2.3.3.1"><p id="p1412462211472"><a name="p1412462211472"></a><a name="p1412462211472"></a><strong id="b111246227470"><a name="b111246227470"></a><a name="b111246227470"></a>失败提示及处理建议</strong></p>
+<tr id="row212432224711"><th class="firstcol" rowspan="3" valign="top" width="11%" id="mcps1.2.3.3.1"><p id="p1412462211472"><a name="p1412462211472"></a><a name="p1412462211472"></a><strong id="b111246227470"><a name="b111246227470"></a><a name="b111246227470"></a>失败提示及<strong id="b55807361765"><a name="b55807361765"></a><a name="b55807361765"></a>处理建议</strong></strong></p>
 </th>
-<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.3.1 "><p id="p26291645125215"><a name="p26291645125215"></a><a name="p26291645125215"></a><strong id="b1825618155712"><a name="b1825618155712"></a><a name="b1825618155712"></a>失败原因</strong>：源数据库参数<span class="parmname" id="parmname7550193393415"><a name="parmname7550193393415"></a><a name="parmname7550193393415"></a><b>hot_standby</b></span>必须开启。</p>
-<p id="p362314420394"><a name="p362314420394"></a><a name="p362314420394"></a><strong id="b98211451277"><a name="b98211451277"></a><a name="b98211451277"></a>处理建议</strong>：建议修改配置文件postgresql.conf中的<span class="parmname" id="parmname215933403317"><a name="parmname215933403317"></a><a name="parmname215933403317"></a><b>hot_standby</b></span>参数为<span class="parmvalue" id="parmvalue17721193773316"><a name="parmvalue17721193773316"></a><a name="parmvalue17721193773316"></a><b>on</b></span>，重启数据库生效。</p>
+<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.3.1 "><p id="p26291645125215"><a name="p26291645125215"></a><a name="p26291645125215"></a><strong id="b1825618155712"><a name="b1825618155712"></a><a name="b1825618155712"></a>失败原因</strong>：源数据库参数<span class="parmname" id="parmname7550193393415"><a name="parmname7550193393415"></a><a name="parmname7550193393415"></a>“hot_standby”</span>必须开启。</p>
+<p id="p362314420394"><a name="p362314420394"></a><a name="p362314420394"></a><strong id="b98211451277"><a name="b98211451277"></a><a name="b98211451277"></a>处理建议</strong>：建议修改配置文件postgresql.conf中的<span class="parmname" id="parmname215933403317"><a name="parmname215933403317"></a><a name="parmname215933403317"></a>“hot_standby”</span>参数为<span class="parmvalue" id="parmvalue17721193773316"><a name="parmvalue17721193773316"></a><a name="parmvalue17721193773316"></a>“on”</span>，重启数据库生效。</p>
 </td>
 </tr>
 <tr id="row082917333470"><td class="cellrowborder" valign="top" headers="mcps1.2.3.3.1 "><p id="p79614275530"><a name="p79614275530"></a><a name="p79614275530"></a><strong id="b3838321145715"><a name="b3838321145715"></a><a name="b3838321145715"></a>失败原因</strong>：用户基本权限不足。</p>

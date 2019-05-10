@@ -1,6 +1,6 @@
 # 源库的schema名是否合法<a name="drs_11_0104"></a>
 
-## PostgreSQL数据库<a name="section14885958191920"></a>
+## PostgreSQL迁移场景<a name="section14885958191920"></a>
 
 **表 1**  源库的schema名是否合法
 
