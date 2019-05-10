@@ -1,6 +1,6 @@
 # MongoDB实例类型是否匹配迁移模式<a name="drs_11_0066"></a>
 
-## MongoDB数据库<a name="section1215815382368"></a>
+## MongoDB迁移场景<a name="section1215815382368"></a>
 
 **表 1**  MongoDB实例类型是否匹配迁移模式
 

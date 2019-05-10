@@ -1,6 +1,6 @@
 # 目标数据库SSL证书类型检查<a name="drs_11_0107"></a>
 
-## MySQL数据库<a name="section191963424478"></a>
+## MySQL迁移场景<a name="section191963424478"></a>
 
 **表 1**  目标数据库SSL证书类型检查
 

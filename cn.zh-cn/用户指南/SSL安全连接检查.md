@@ -1,24 +1,24 @@
 # SSL安全连接检查<a name="drs_11_0017"></a>
 
-## 源数据库为MySQL数据库<a name="section17701049191516"></a>
+## MySQL迁移场景<a name="section17701049191516"></a>
 
 **表 1**  SSL安全连接检查
 
 <a name="table5112628104844"></a>
-<table><tbody><tr id="row23611040104844"><th class="firstcol" valign="top" width="8.540000000000001%" id="mcps1.2.3.1.1"><p id="p33446093104844"><a name="p33446093104844"></a><a name="p33446093104844"></a><strong id="b32579387104844"><a name="b32579387104844"></a><a name="b32579387104844"></a>预检查项</strong></p>
+<table><tbody><tr id="row23611040104844"><th class="firstcol" valign="top" width="11%" id="mcps1.2.3.1.1"><p id="p33446093104844"><a name="p33446093104844"></a><a name="p33446093104844"></a><strong id="b32579387104844"><a name="b32579387104844"></a><a name="b32579387104844"></a>预检查项</strong></p>
 </th>
-<td class="cellrowborder" valign="top" width="91.46%" headers="mcps1.2.3.1.1 "><p id="p21684690104844"><a name="p21684690104844"></a><a name="p21684690104844"></a>SSL安全连接检查。</p>
+<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.1.1 "><p id="p21684690104844"><a name="p21684690104844"></a><a name="p21684690104844"></a>SSL安全连接检查。</p>
 </td>
 </tr>
-<tr id="row60944485104844"><th class="firstcol" valign="top" width="8.540000000000001%" id="mcps1.2.3.2.1"><p id="p37556256104844"><a name="p37556256104844"></a><a name="p37556256104844"></a><strong id="b2461985104844"><a name="b2461985104844"></a><a name="b2461985104844"></a>描述</strong></p>
+<tr id="row60944485104844"><th class="firstcol" valign="top" width="11%" id="mcps1.2.3.2.1"><p id="p37556256104844"><a name="p37556256104844"></a><a name="p37556256104844"></a><strong id="b2461985104844"><a name="b2461985104844"></a><a name="b2461985104844"></a>描述</strong></p>
 </th>
-<td class="cellrowborder" valign="top" width="91.46%" headers="mcps1.2.3.2.1 "><p id="p65203114104844"><a name="p65203114104844"></a><a name="p65203114104844"></a>检查源数据库的SSL安全连接设置状态。</p>
+<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.2.1 "><p id="p65203114104844"><a name="p65203114104844"></a><a name="p65203114104844"></a>检查源数据库的SSL安全连接设置状态。</p>
 </td>
 </tr>
-<tr id="row49957115104844"><th class="firstcol" rowspan="10" valign="top" width="8.540000000000001%" id="mcps1.2.3.3.1"><p id="p19994475104844"><a name="p19994475104844"></a><a name="p19994475104844"></a><strong id="b45732548104844"><a name="b45732548104844"></a><a name="b45732548104844"></a>失败提示及处理建议</strong></p>
+<tr id="row49957115104844"><th class="firstcol" rowspan="10" valign="top" width="11%" id="mcps1.2.3.3.1"><p id="p19994475104844"><a name="p19994475104844"></a><a name="p19994475104844"></a><strong id="b45732548104844"><a name="b45732548104844"></a><a name="b45732548104844"></a>失败提示及<strong id="b14490151682817"><a name="b14490151682817"></a><a name="b14490151682817"></a>处理建议</strong></strong></p>
 <p id="p547312923918"><a name="p547312923918"></a><a name="p547312923918"></a></p>
 </th>
-<td class="cellrowborder" valign="top" width="91.46%" headers="mcps1.2.3.3.1 "><p id="p81193432816"><a name="p81193432816"></a><a name="p81193432816"></a><strong id="b146994160230"><a name="b146994160230"></a><a name="b146994160230"></a>失败原因</strong>：源数据库连接失败，导致该项检查无法进行。</p>
+<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.3.1 "><p id="p81193432816"><a name="p81193432816"></a><a name="p81193432816"></a><strong id="b146994160230"><a name="b146994160230"></a><a name="b146994160230"></a>失败原因</strong>：源数据库连接失败，导致该项检查无法进行。</p>
 <p id="p5608853254"><a name="p5608853254"></a><a name="p5608853254"></a><strong id="b39059592324"><a name="b39059592324"></a><a name="b39059592324"></a>处理建议</strong>：查看源数据库连接是否成功。</p>
 </td>
 </tr>
@@ -39,7 +39,7 @@
 </td>
 </tr>
 <tr id="row6615172032614"><td class="cellrowborder" valign="top" headers="mcps1.2.3.3.1 "><p id="p383014622610"><a name="p383014622610"></a><a name="p383014622610"></a><strong id="b088431882814"><a name="b088431882814"></a><a name="b088431882814"></a>失败原因</strong>：源数据库用户绑定了REQUIRE SSL权限，必须通过SSL方式连接，但是没有上传证书。</p>
-<p id="p13821203418275"><a name="p13821203418275"></a><a name="p13821203418275"></a><strong id="b848093310331"><a name="b848093310331"></a><a name="b848093310331"></a>处理建议</strong>：返回到<span class="uicontrol" id="uicontrol49093556112956"><a name="uicontrol49093556112956"></a><a name="uicontrol49093556112956"></a><b>源库及目标库</b></span>页面，打开SSL安全连接开关并且上传证书或者更换源数据库帐号。</p>
+<p id="p13821203418275"><a name="p13821203418275"></a><a name="p13821203418275"></a><strong id="b848093310331"><a name="b848093310331"></a><a name="b848093310331"></a>处理建议</strong>：返回到<span class="uicontrol" id="uicontrol49093556112956"><a name="uicontrol49093556112956"></a><a name="uicontrol49093556112956"></a>“源库及目标库”</span>页面，打开SSL安全连接开关并且上传证书或者更换源数据库帐号。</p>
 </td>
 </tr>
 <tr id="row484420785312"><td class="cellrowborder" valign="top" headers="mcps1.2.3.3.1 "><p id="p887518965315"><a name="p887518965315"></a><a name="p887518965315"></a><strong id="b8500121311536"><a name="b8500121311536"></a><a name="b8500121311536"></a>失败原因</strong>：目标数据库用户绑定了REQUIRE SSL权限，必须通过SSL方式连接，但是没有上传证书。</p>
@@ -56,6 +56,30 @@
 </tr>
 <tr id="row1847319292394"><td class="cellrowborder" valign="top" headers="mcps1.2.3.3.1 "><p id="p33011335183915"><a name="p33011335183915"></a><a name="p33011335183915"></a><strong id="b43011635123915"><a name="b43011635123915"></a><a name="b43011635123915"></a>失败原因</strong>：源数据库开启了SSL开关，但是没有上传证书。</p>
 <p id="p33011335163914"><a name="p33011335163914"></a><a name="p33011335163914"></a><strong id="b2980114663311"><a name="b2980114663311"></a><a name="b2980114663311"></a>处理建议</strong>：关闭源数据库的SSL开关，或者在源库及目标库配置页面上传SSL安全证书。</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## MongoDB迁移场景<a name="section191963424478"></a>
+
+**表 2**  源数据库的SSL状态检查
+
+<a name="table853017177447"></a>
+<table><tbody><tr id="row1854591710447"><th class="firstcol" valign="top" width="11%" id="mcps1.2.3.1.1"><p id="p1356101713440"><a name="p1356101713440"></a><a name="p1356101713440"></a><strong id="b16561131710445"><a name="b16561131710445"></a><a name="b16561131710445"></a>预检查项</strong></p>
+</th>
+<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.1.1 "><p id="p13561917164412"><a name="p13561917164412"></a><a name="p13561917164412"></a><span class="keyword" id="keyword6190152234519"><a name="keyword6190152234519"></a><a name="keyword6190152234519"></a>源数据库的SSL状态</span>检查。</p>
+</td>
+</tr>
+<tr id="row2057614176447"><th class="firstcol" valign="top" width="11%" id="mcps1.2.3.2.1"><p id="p18576517134410"><a name="p18576517134410"></a><a name="p18576517134410"></a><strong id="b2057611172444"><a name="b2057611172444"></a><a name="b2057611172444"></a>描述</strong></p>
+</th>
+<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.2.1 "><p id="p196081717204410"><a name="p196081717204410"></a><a name="p196081717204410"></a>检查源数据库的SSL是否开启。</p>
+</td>
+</tr>
+<tr id="row56083173444"><th class="firstcol" valign="top" width="11%" id="mcps1.2.3.3.1"><p id="p06081617174412"><a name="p06081617174412"></a><a name="p06081617174412"></a><strong id="b1660821713443"><a name="b1660821713443"></a><a name="b1660821713443"></a>失败提示及<strong id="b117671048113514"><a name="b117671048113514"></a><a name="b117671048113514"></a>处理建议</strong></strong></p>
+</th>
+<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.3.1 "><p id="p062301714444"><a name="p062301714444"></a><a name="p062301714444"></a><strong id="b1990511401232"><a name="b1990511401232"></a><a name="b1990511401232"></a>失败原因</strong>：数据库开启了SSL开关，但是没有上传证书。</p>
+<p id="p2084215421831"><a name="p2084215421831"></a><a name="p2084215421831"></a><strong id="b1642212111403"><a name="b1642212111403"></a><a name="b1642212111403"></a>处理建议</strong>：关闭数据库的SSL开关或者在数据库配置界面勾选SSL并上传证书。</p>
 </td>
 </tr>
 </tbody>
