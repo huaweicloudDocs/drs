@@ -1,4 +1,4 @@
-# 源库是否包含无日志表\(UNLOGGED TABLE\)（hw）<a name="drs_11_0112"></a>
+# 源库是否包含无日志表\(UNLOGGED TABLE\)<a name="drs_11_0112"></a>
 
 ## PostgreSQL-\>PostgreSQL同步场景<a name="section14404223174716"></a>
 
