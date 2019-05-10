@@ -1,23 +1,23 @@
 # 源数据库参数server-id是否符合增量迁移要求<a name="drs_11_0018"></a>
 
-## 源数据库为MySQL数据库<a name="section8961123011172"></a>
+## MySQL迁移场景<a name="section8961123011172"></a>
 
 **表 1**  源数据库参数server\_id是否符合增量迁移要求
 
 <a name="table4980162018737"></a>
-<table><tbody><tr id="row2782383618737"><th class="firstcol" valign="top" width="8.02%" id="mcps1.2.3.1.1"><p id="p3913823218737"><a name="p3913823218737"></a><a name="p3913823218737"></a><strong id="b1669976818737"><a name="b1669976818737"></a><a name="b1669976818737"></a>预检查项</strong></p>
+<table><tbody><tr id="row2782383618737"><th class="firstcol" valign="top" width="11%" id="mcps1.2.3.1.1"><p id="p3913823218737"><a name="p3913823218737"></a><a name="p3913823218737"></a><strong id="b1669976818737"><a name="b1669976818737"></a><a name="b1669976818737"></a>预检查项</strong></p>
 </th>
-<td class="cellrowborder" valign="top" width="91.97999999999999%" headers="mcps1.2.3.1.1 "><p id="p6629537918847"><a name="p6629537918847"></a><a name="p6629537918847"></a><span class="keyword" id="keyword621114493815"><a name="keyword621114493815"></a><a name="keyword621114493815"></a>源数据库参数server_id</span>是否符合增量迁移要求。</p>
+<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.1.1 "><p id="p6629537918847"><a name="p6629537918847"></a><a name="p6629537918847"></a><span class="keyword" id="keyword621114493815"><a name="keyword621114493815"></a><a name="keyword621114493815"></a>源数据库参数server_id</span>是否符合增量迁移要求。</p>
 </td>
 </tr>
-<tr id="row2742650018737"><th class="firstcol" valign="top" width="8.02%" id="mcps1.2.3.2.1"><p id="p695405318737"><a name="p695405318737"></a><a name="p695405318737"></a><strong id="b6258648518737"><a name="b6258648518737"></a><a name="b6258648518737"></a>描述</strong></p>
+<tr id="row2742650018737"><th class="firstcol" valign="top" width="11%" id="mcps1.2.3.2.1"><p id="p695405318737"><a name="p695405318737"></a><a name="p695405318737"></a><strong id="b6258648518737"><a name="b6258648518737"></a><a name="b6258648518737"></a>描述</strong></p>
 </th>
-<td class="cellrowborder" valign="top" width="91.97999999999999%" headers="mcps1.2.3.2.1 "><p id="p4040102118352"><a name="p4040102118352"></a><a name="p4040102118352"></a>检查源数据库的server-id是否符合增量迁移要求。</p>
+<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.2.1 "><p id="p4040102118352"><a name="p4040102118352"></a><a name="p4040102118352"></a>检查源数据库的server-id是否符合增量迁移要求。</p>
 </td>
 </tr>
-<tr id="row5862944518737"><th class="firstcol" rowspan="4" valign="top" width="8.02%" id="mcps1.2.3.3.1"><p id="p5136462818737"><a name="p5136462818737"></a><a name="p5136462818737"></a><strong id="b5962847118737"><a name="b5962847118737"></a><a name="b5962847118737"></a>失败提示及处理建议</strong></p>
+<tr id="row5862944518737"><th class="firstcol" rowspan="4" valign="top" width="11%" id="mcps1.2.3.3.1"><p id="p5136462818737"><a name="p5136462818737"></a><a name="p5136462818737"></a><strong id="b5962847118737"><a name="b5962847118737"></a><a name="b5962847118737"></a>失败提示及<strong id="b14490151682817"><a name="b14490151682817"></a><a name="b14490151682817"></a>处理建议</strong></strong></p>
 </th>
-<td class="cellrowborder" valign="top" width="91.97999999999999%" headers="mcps1.2.3.3.1 "><p id="p177448299308"><a name="p177448299308"></a><a name="p177448299308"></a><strong id="b14119122552816"><a name="b14119122552816"></a><a name="b14119122552816"></a>失败原因</strong>：源数据库连接失败，导致该项检查无法进行。</p>
+<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.3.1 "><p id="p177448299308"><a name="p177448299308"></a><a name="p177448299308"></a><strong id="b14119122552816"><a name="b14119122552816"></a><a name="b14119122552816"></a>失败原因</strong>：源数据库连接失败，导致该项检查无法进行。</p>
 <p id="p161016291303"><a name="p161016291303"></a><a name="p161016291303"></a><strong id="b8714125723313"><a name="b8714125723313"></a><a name="b8714125723313"></a>处理建议</strong>：查看源数据连接是否成功。</p>
 </td>
 </tr>

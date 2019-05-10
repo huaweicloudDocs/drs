@@ -1,6 +1,6 @@
 # 源数据库与目标数据库的BLOCK\_SIZE参数值是否相同<a name="drs_11_0063"></a>
 
-## PostgreSQL数据库<a name="section2055414110311"></a>
+## PostgreSQL迁移场景<a name="section2055414110311"></a>
 
 **表 1**  源数据库与目标数据库的BLOCK\_SIZE参数值是否相同
 

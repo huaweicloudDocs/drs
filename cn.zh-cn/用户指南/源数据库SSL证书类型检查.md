@@ -1,6 +1,6 @@
 # 源数据库SSL证书类型检查<a name="drs_11_0106"></a>
 
-## MySQL-\>MySQL<a name="section191963424478"></a>
+## MySQL-\>MySQL同步场景<a name="section191963424478"></a>
 
 **表 1**  源数据库SSL证书类型检查
 

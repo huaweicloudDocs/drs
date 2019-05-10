@@ -1,6 +1,6 @@
 # 源数据库参数MAX\_REPLICATION\_SLOTS校验<a name="drs_11_0102"></a>
 
-## PostgreSQL数据库<a name="section1238917511343"></a>
+## PostgreSQL迁移场景<a name="section1238917511343"></a>
 
 **表 1**  源数据库参数MAX\_REPLICATION\_SLOTS校验
 
