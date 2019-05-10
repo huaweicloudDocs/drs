@@ -83,7 +83,7 @@ SDK中定义了多种类对象，本小节简单介绍SDK的这些类的接口�
     </thead>
     <tbody><tr id="row1886732817236"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p15867202862315"><a name="p15867202862315"></a><a name="p15867202862315"></a>void notify(List&lt;ClusterMessage&gt; var1)</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p186720282233"><a name="p186720282233"></a><a name="p186720282233"></a>该函数主要用于定义增量数据的消费。当SDK接收到数据时，会通过notify通知ClusterListner消费数据。例如<a href="SDK使用说明.md#section14870536164719">SDK使用demo</a>的消费方式，就是将订阅数据打印到屏幕上。</p>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p186720282233"><a name="p186720282233"></a><a name="p186720282233"></a>该函数主要用于定义增量数据的消费。当SDK接收到数据时，会通过notify通知ClusterListner消费数据。例如<a href="SDK使用说明.md#section14870536164719">SDK使用模版</a>的消费方式，就是将订阅数据打印到屏幕上。</p>
     <p id="p1912510620256"><a name="p1912510620256"></a><a name="p1912510620256"></a>该函数输入参数类型为：List &lt;ClusterMessage&gt;, 其中ClusterMessage为订阅数据存储的结构对象，具体定义详见<a href="#table5115642614">表4</a>。</p>
     </td>
     </tr>
