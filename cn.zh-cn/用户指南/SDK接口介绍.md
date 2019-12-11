@@ -16,13 +16,13 @@ SDK中定义了多种类对象，本小节简单介绍SDK的这些类的接口�
     <tbody><tr id="row176531719131315"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p166061945130"><a name="p166061945130"></a><a name="p166061945130"></a>setDomainName(String domainName)</p>
     </td>
     <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p175749512198"><a name="p175749512198"></a><a name="p175749512198"></a>设置用户名。</p>
-    <p id="p06531719141310"><a name="p06531719141310"></a><a name="p06531719141310"></a>参数为创建所需数据订阅任务的华为云帐号。</p>
+    <p id="p06531719141310"><a name="p06531719141310"></a><a name="p06531719141310"></a>参数为创建所需数据订阅任务的本云帐号。</p>
     </td>
     </tr>
     <tr id="row13653101913134"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p1565331910138"><a name="p1565331910138"></a><a name="p1565331910138"></a>setPassword(String password)</p>
     </td>
     <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p210614117191"><a name="p210614117191"></a><a name="p210614117191"></a>设置用户密码。</p>
-    <p id="p165381913137"><a name="p165381913137"></a><a name="p165381913137"></a>参数为创建所需数据订阅任务的华为云帐号密码。</p>
+    <p id="p165381913137"><a name="p165381913137"></a><a name="p165381913137"></a>参数为创建所需数据订阅任务的本云帐号密码。</p>
     </td>
     </tr>
     <tr id="row1165311911313"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p136065491318"><a name="p136065491318"></a><a name="p136065491318"></a>setIp(String ip)</p>
@@ -105,7 +105,7 @@ SDK中定义了多种类对象，本小节简单介绍SDK的这些类的接口�
     </thead>
     <tbody><tr id="row911116152614"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p1111126162610"><a name="p1111126162610"></a><a name="p1111126162610"></a>Record getRecord()</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p8116632611"><a name="p8116632611"></a><a name="p8116632611"></a>该接口从ClusterMessage中获取一条变更记录。这个变更记录表示RDS的binlog文件中的每一条记录，例如begin ,commit,update,insert等。</p>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p8116632611"><a name="p8116632611"></a><a name="p8116632611"></a>该接口从ClusterMessage中获取一条变更记录。这个变更记录表示RDS的binlog文件中的每一条记录，例如begin，commit，update，insert等。</p>
     </td>
     </tr>
     </tbody>
@@ -113,7 +113,7 @@ SDK中定义了多种类对象，本小节简单介绍SDK的这些类的接口�
 
 -   Record接口定义
 
-    Record代表订阅的RDS的binlog文件中的每条记录，例如begin, commit,update等。
+    Record代表订阅的RDS的binlog文件中的每条记录，例如begin，commit，update等。
 
     **表 5**  Record接口定义
 

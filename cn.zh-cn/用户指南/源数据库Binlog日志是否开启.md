@@ -1,4 +1,4 @@
-# 源数据库Binlog日志是否开启<a name="drs_11_0014"></a>
+# 源数据库binlog日志是否开启<a name="drs_11_0014"></a>
 
 ## MySQL迁移场景<a name="section1620113163122"></a>
 
@@ -32,9 +32,9 @@
 <tr id="row1605119819632"><td class="cellrowborder" valign="top" headers="mcps1.2.3.3.1 "><p id="p84501827171211"><a name="p84501827171211"></a><a name="p84501827171211"></a><strong id="b6450172781213"><a name="b6450172781213"></a><a name="b6450172781213"></a>失败原因</strong>：源数据库未开启binlog日志功能。</p>
 <p id="p188251676138"><a name="p188251676138"></a><a name="p188251676138"></a><strong id="b118257771318"><a name="b118257771318"></a><a name="b118257771318"></a>处理建议</strong>：</p>
 <a name="ul1578371832611"></a><a name="ul1578371832611"></a><ul id="ul1578371832611"><li>如果您进行的是入云操作，建议参考如下操作开启binlog日志。<a name="ol1378310183261"></a><a name="ol1378310183261"></a><ol id="ol1378310183261"><li>查看binlog日志是否开启。<pre class="codeblock" id="codeblock1278313187263"><a name="codeblock1278313187263"></a><a name="codeblock1278313187263"></a><strong id="b18783218122615"><a name="b18783218122615"></a><a name="b18783218122615"></a>show variables like "log_bin"\G;</strong></pre>
-<p id="p12783518162619"><a name="p12783518162619"></a><a name="p12783518162619"></a><a name="image6783171832615"></a><a name="image6783171832615"></a><span><img id="image6783171832615" src="figures/查看binlog状态.png" width="349.9008570098879" height="79.24583164215078"></span></p>
-</li><li>如果是关闭状态，在mysql配置文件my.cnf中的[mysqld]标签下增加一行log-bin = mysql-bin。<p id="p678318180268"><a name="p678318180268"></a><a name="p678318180268"></a><a name="image107839187266"></a><a name="image107839187266"></a><span><img id="image107839187266" src="figures/配置binlog.png" height="32.917500000000004" width="157.96772312164265"></span></p>
-</li><li>重启数据库。<p id="p77831418102618"><a name="p77831418102618"></a><a name="p77831418102618"></a><a name="image1178311802617"></a><a name="image1178311802617"></a><span><img id="image1178311802617" src="figures/修改binlog成功.jpg" width="309.09200202941906" height="60.32960623741153"></span></p>
+<p id="p25474920524"><a name="p25474920524"></a><a name="p25474920524"></a><a name="image15549492526"></a><a name="image15549492526"></a><span><img id="image15549492526" src="figures/drs_logbin_off.png" height="79.80000000000001" width="399"></span></p>
+</li><li>如果是关闭状态，在mysql配置文件my.cnf或my.ini中的[mysqld]标签下增加一行log-bin = mysql-bin。<p id="p729190175318"><a name="p729190175318"></a><a name="p729190175318"></a><a name="image829110035313"></a><a name="image829110035313"></a><span><img id="image829110035313" src="figures/drs_logbin.png"></span></p>
+</li><li>重启数据库。<p id="p643414108533"><a name="p643414108533"></a><a name="p643414108533"></a><a name="image144341105531"></a><a name="image144341105531"></a><span><img id="image144341105531" src="figures/drs_logbin_on.jpg" height="73.720038" width="399"></span></p>
 </li></ol>
 </li><li>如果您进行的是出云操作，建议联系客服人员进行处理。</li></ul>
 </td>

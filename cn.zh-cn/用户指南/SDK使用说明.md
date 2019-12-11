@@ -10,7 +10,7 @@
 2.  一个订阅通道只能被一个SDK消费，如果启动多个SDK连接同一个数据订阅通道时，只能有一个SDK进程获取到数据变化信息。如果有多个下游SDK需要订阅同一个RDS的增量数据。那么需要为每个下游SDK创建一个数据订阅任务。
 3.  数据订阅成功后，如果不及时进行消费，新产生的数据最多保留3天。
 
->![](public_sys-resources/icon-notice.gif) **注意：**   
+>![](public_sys-resources/icon-notice.gif) **须知：**   
 >数据复制服务提供的JAVA版本SDK支持的开发环境为JDK1.6以上版本， 推荐使用JDK1.8版本。  
 
 ## 网络类型<a name="section35314819381"></a>
@@ -76,9 +76,9 @@ import java.util.List;
 public class MainClass {
 public static void main(String[] args) throws Exception {
 SubscribeContext context = new SubscribeContext();
-//设置华为云用户名称
+//设置本云用户名称
 context.setDomainName("username");
-//设置华为云用户密码
+//设置本云用户密码
 context.setPassword("userpassword");
 //设置订阅通道的IP，即数据订阅页面的订阅实例IP
 context.setIp("SubscribeChannelIp");

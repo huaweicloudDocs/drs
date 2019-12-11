@@ -1,6 +1,6 @@
 # 目标库最大支持chunk数目检查<a name="drs_11_0202"></a>
 
-## MongoDB迁移场景<a name="section14885958191920"></a>
+## MongoDB数据库迁移场景<a name="section14885958191920"></a>
 
 **表 1**  目标库最大支持chunk数目检查
 

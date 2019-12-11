@@ -61,7 +61,7 @@
 </tbody>
 </table>
 
-## MongoDB迁移场景<a name="section191963424478"></a>
+## MongoDB数据库迁移场景<a name="section191963424478"></a>
 
 **表 2**  源数据库的SSL状态检查
 

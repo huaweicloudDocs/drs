@@ -1,6 +1,6 @@
 # 数据库SSL一致性检查<a name="drs_11_0108"></a>
 
-## MongoDB迁移场景<a name="section2142104644718"></a>
+## MongoDB数据库迁移场景<a name="section2142104644718"></a>
 
 **表 1**  数据库SSL一致性检查
 

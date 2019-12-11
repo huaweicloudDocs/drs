@@ -1,4 +1,4 @@
-# 源数据库Binlog保留时间检查<a name="drs_11_0016"></a>
+# 源数据库binlog保留时间检查<a name="drs_11_0016"></a>
 
 ## MySQL迁移场景<a name="section19914332145"></a>
 

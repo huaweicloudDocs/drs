@@ -1,6 +1,6 @@
 # 源数据库索引（\_id）检查<a name="drs_11_0114"></a>
 
-## MongoDB迁移场景<a name="section834844911539"></a>
+## MongoDB数据库迁移场景<a name="section834844911539"></a>
 
 **表 1**  源数据库索引（\_id）检查
 
