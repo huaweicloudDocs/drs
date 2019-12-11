@@ -1,0 +1,38 @@
+# 校验源数据库参数wal\_keep\_segments<a name="drs_11_0058"></a>
+
+## PostgreSQL迁移场景<a name="section96361428429"></a>
+
+**表 1**  校验源数据库参数wal\_keep\_segments
+
+<a name="table195653327432"></a>
+<table><tbody><tr id="row7565632164318"><th class="firstcol" valign="top" width="11%" id="mcps1.2.3.1.1"><p id="p11565132194313"><a name="p11565132194313"></a><a name="p11565132194313"></a><strong id="b6565203254311"><a name="b6565203254311"></a><a name="b6565203254311"></a>预检查项</strong></p>
+</th>
+<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.1.1 "><p id="p3565133234318"><a name="p3565133234318"></a><a name="p3565133234318"></a>校验源数据库参数wal_keep_segments。</p>
+</td>
+</tr>
+<tr id="row145651232104317"><th class="firstcol" valign="top" width="11%" id="mcps1.2.3.2.1"><p id="p5565173224315"><a name="p5565173224315"></a><a name="p5565173224315"></a><strong id="b556573254316"><a name="b556573254316"></a><a name="b556573254316"></a>描述</strong></p>
+</th>
+<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.2.1 "><p id="p656563214319"><a name="p656563214319"></a><a name="p656563214319"></a>源数据库wal_keep_segments参数值设置过小，导致迁移失败。</p>
+</td>
+</tr>
+<tr id="row45652032164319"><th class="firstcol" rowspan="4" valign="top" width="11%" id="mcps1.2.3.3.1"><p id="p1556583254317"><a name="p1556583254317"></a><a name="p1556583254317"></a><strong id="b6565832204317"><a name="b6565832204317"></a><a name="b6565832204317"></a>失败提示及<strong id="b55807361765"><a name="b55807361765"></a><a name="b55807361765"></a>处理建议</strong></strong></p>
+</th>
+<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.3.1 "><p id="p58679261532"><a name="p58679261532"></a><a name="p58679261532"></a><strong id="b1466642645714"><a name="b1466642645714"></a><a name="b1466642645714"></a>失败原因</strong>：wal_keep_segments参数设置过小。</p>
+<p id="p1512182855417"><a name="p1512182855417"></a><a name="p1512182855417"></a><strong id="b1816517188"><a name="b1816517188"></a><a name="b1816517188"></a>处理建议</strong>：建议将wal_keep_segments 值至少调整为(源库大小×5%&divide;16)，如果源库业务较繁忙相应的增加这个值。</p>
+</td>
+</tr>
+<tr id="row75642919466"><td class="cellrowborder" valign="top" headers="mcps1.2.3.3.1 "><p id="p59841926145510"><a name="p59841926145510"></a><a name="p59841926145510"></a><strong id="b18291162845713"><a name="b18291162845713"></a><a name="b18291162845713"></a>失败原因</strong>：获取源库数据库大小失败，导致无法校验源库系统参数wal_keep_segments。</p>
+<p id="p1620352815517"><a name="p1620352815517"></a><a name="p1620352815517"></a><strong id="b109729191982"><a name="b109729191982"></a><a name="b109729191982"></a>处理建议</strong>：请联系客服人员处理。</p>
+</td>
+</tr>
+<tr id="row16845163084620"><td class="cellrowborder" valign="top" headers="mcps1.2.3.3.1 "><p id="p79614275530"><a name="p79614275530"></a><a name="p79614275530"></a><strong id="b3838321145715"><a name="b3838321145715"></a><a name="b3838321145715"></a>失败原因</strong>：用户基本权限不足。</p>
+<p id="p17341101345410"><a name="p17341101345410"></a><a name="p17341101345410"></a><strong id="b138631721787"><a name="b138631721787"></a><a name="b138631721787"></a>处理建议</strong>：查看对应的数据库帐号权限是否符合迁移要求。</p>
+</td>
+</tr>
+<tr id="row1397014348460"><td class="cellrowborder" valign="top" headers="mcps1.2.3.3.1 "><p id="p117543371522"><a name="p117543371522"></a><a name="p117543371522"></a><strong id="b1227672515714"><a name="b1227672515714"></a><a name="b1227672515714"></a>失败原因</strong>：内部错误。</p>
+<p id="p1490342055417"><a name="p1490342055417"></a><a name="p1490342055417"></a><strong id="b1283113231819"><a name="b1283113231819"></a><a name="b1283113231819"></a>处理建议</strong>：请联系客服人员处理。</p>
+</td>
+</tr>
+</tbody>
+</table>
+
