@@ -17,7 +17,7 @@
 </tr>
 <tr id="row8287142915915"><th class="firstcol" valign="top" width="11%" id="mcps1.2.3.3.1"><p id="p6303132925913"><a name="p6303132925913"></a><a name="p6303132925913"></a><strong id="b103035294594"><a name="b103035294594"></a><a name="b103035294594"></a>失败提示及<strong id="b14490151682817"><a name="b14490151682817"></a><a name="b14490151682817"></a>处理建议</strong></strong></p>
 </th>
-<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.3.1 "><p id="p1830392914594"><a name="p1830392914594"></a><a name="p1830392914594"></a><strong id="b3733349123219"><a name="b3733349123219"></a><a name="b3733349123219"></a>失败原因</strong>：源数据库和目标数据库的参数SERVER_UUID相同, 将导致增量迁移失败。。</p>
+<td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.3.1 "><p id="p1830392914594"><a name="p1830392914594"></a><a name="p1830392914594"></a><strong id="b3733349123219"><a name="b3733349123219"></a><a name="b3733349123219"></a>失败原因</strong>：源数据库和目标数据库的参数SERVER_UUID相同, 将导致增量迁移失败。</p>
 <p id="p11226153214386"><a name="p11226153214386"></a><a name="p11226153214386"></a><strong id="b14548638193514"><a name="b14548638193514"></a><a name="b14548638193514"></a>处理建议</strong>：检查源数据库与目标数据库是否设置为同一个MySQL数据库。</p>
 </td>
 </tr>
