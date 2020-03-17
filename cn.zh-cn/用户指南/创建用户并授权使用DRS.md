@@ -7,11 +7,11 @@
 **图 1**  给用户授权DRS权限流程<a name="fig158351985619"></a>  
 ![](figures/给用户授权DRS权限流程.jpg "给用户授权DRS权限流程")
 
-1.  <a name="li1658301914563"></a>[创建用户组并授权](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0046611269.html)
+1.  <a name="li1658301914563"></a>[创建用户组并授权](https://support.huaweicloud.com/usermanual-iam/iam_03_0001.html)
 
     在IAM控制台创建用户组，并授予数据复制服务管理员权限“DRS Administrator“权限。
 
-2.  [创建用户](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0046611303.html)
+2.  [创建用户](https://support.huaweicloud.com/usermanual-iam/iam_02_0001.html)
 
     在IAM控制台创建用户，并将其加入[1](#li1658301914563)中创建的用户组。
 

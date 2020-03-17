@@ -18,7 +18,7 @@
 <tr id="row212432224711"><th class="firstcol" valign="top" width="11%" id="mcps1.2.3.3.1"><p id="p1412462211472"><a name="p1412462211472"></a><a name="p1412462211472"></a><strong id="b111246227470"><a name="b111246227470"></a><a name="b111246227470"></a>失败提示及<strong id="b15891153114115"><a name="b15891153114115"></a><a name="b15891153114115"></a>处理建议</strong></strong></p>
 </th>
 <td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.3.1 "><p id="p6240286333"><a name="p6240286333"></a><a name="p6240286333"></a><strong id="b3240382333"><a name="b3240382333"></a><a name="b3240382333"></a>失败原因</strong>：目标数据库含有NO_ENGINE_SUBSTITUTION参数。</p>
-<p id="p173911223615"><a name="p173911223615"></a><a name="p173911223615"></a><strong id="b14886165111516"><a name="b14886165111516"></a><a name="b14886165111516"></a>处理建议</strong>：建议去除目标数据库SQl_MODE中NO_ENGINE_SUBSTITUTION参数，具体方法请参见《关系型数据库用户指南》中“<a href="https://support.huaweicloud.com/usermanual-rds/zh-cn_topic_configuration.html" target="_blank" rel="noopener noreferrer">编辑参数</a>”章节。</p>
+<p id="p173911223615"><a name="p173911223615"></a><a name="p173911223615"></a><strong id="b14886165111516"><a name="b14886165111516"></a><a name="b14886165111516"></a>处理建议</strong>：建议去除目标数据库SQl_MODE中NO_ENGINE_SUBSTITUTION参数，具体方法请参见《关系型数据库用户指南》中“<a href="https://support.huaweicloud.com/usermanual-rds/rds_configuration.html" target="_blank" rel="noopener noreferrer">编辑参数</a>”章节。</p>
 </td>
 </tr>
 </tbody>
