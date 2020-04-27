@@ -21,7 +21,8 @@ VPN网络（专线网络）适合通过VPN网络（专线网络），实现其�
 2.  在“场景选择“页面，分别选择“源数据库来源“和“目标数据库来源“后，单击“下一步“进入“迁移实例“页面。
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
-    >本例中“源数据库来源“可以为“本地自建库“、“本云云数据库“、“本云ECS自建库“或“其他云上数据库“，“目标数据库来源“为“本云云数据库“。  
+    >-   本例中“源数据库来源“可以为“本地自建库“、“本云云数据库“、“本云ECS自建库“或“其他云上数据库“，“目标数据库来源“为“本云云数据库“。  
+    >-   目前不支持自建数据库库到自建数据库的迁移。  
 
 3.  在“迁移实例”页面，填选任务名称、通知收件人信息、描述、迁移实例信息，单击“下一步”。
 
@@ -163,7 +164,7 @@ VPN网络（专线网络）适合通过VPN网络（专线网络），实现其�
     <tr id="row26531923125912"><td class="cellrowborder" valign="top" width="23.29%" headers="mcps1.2.3.1.1 "><p id="p2653112395910"><a name="p2653112395910"></a><a name="p2653112395910"></a>SSL安全连接</p>
     </td>
     <td class="cellrowborder" valign="top" width="76.71%" headers="mcps1.2.3.1.2 "><p id="p765310236599"><a name="p765310236599"></a><a name="p765310236599"></a>通过该功能，用户可以选择是否开启对迁移链路的加密。如果开启该功能，需要用户上传SSL CA根证书。</p>
-    <div class="note" id="note1450165911181"><a name="note1450165911181"></a><a name="note1450165911181"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1245119594183"><a name="p1245119594183"></a><a name="p1245119594183"></a>最大支持上传500KB的证书文件。</p>
+    <div class="note" id="note1450165911181"><a name="note1450165911181"></a><a name="note1450165911181"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul4843230111212"></a><a name="ul4843230111212"></a><ul id="ul4843230111212"><li>最大支持上传500KB的证书文件。</li><li>如果不使用SSL证书，请自行承担数据安全风险。</li></ul>
     </div></div>
     </td>
     </tr>
@@ -245,8 +246,8 @@ VPN网络（专线网络）适合通过VPN网络（专线网络），实现其�
     <td class="cellrowborder" valign="top" width="84%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0078078071_p3491737124612"><a name="zh-cn_topic_0078078071_p3491737124612"></a><a name="zh-cn_topic_0078078071_p3491737124612"></a>流速模式支持限速和不限速，默认为不限速。</p>
     <a name="zh-cn_topic_0078078071_ul9762123112510"></a><a name="zh-cn_topic_0078078071_ul9762123112510"></a><ul id="zh-cn_topic_0078078071_ul9762123112510"><li>限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。<p id="zh-cn_topic_0078078071_p1383414227396"><a name="zh-cn_topic_0078078071_p1383414227396"></a><a name="zh-cn_topic_0078078071_p1383414227396"></a>当流速模式选择了“限速”时，你需要通过流速设置来定时控制迁移速度。流速设置通常包括限速时间段和流速大小的设置。默认的限速时间段为全天，您也可以根据业务需求自定义定时限速。自定义的定时限速支持最多设置3个定时任务，每个定时任务之间不能存在交叉的时间段，未设定在限速时间段的时间默认为不限速。</p>
     <p id="p543392816321"><a name="p543392816321"></a><a name="p543392816321"></a>流速的大小需要根据业务场景来设置，不能超过9999Mb/s。</p>
-    <div class="fignone" id="fig218884774210"><a name="fig218884774210"></a><a name="fig218884774210"></a><span class="figcap"><b>图1 </b>设置流速模式</span><br><a name="image18188347134212"></a><a name="image18188347134212"></a><span><img id="image18188347134212" src="figures/设置流速模式.png" height="196.839867" width="399"></span></div>
-    </li><li>不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如源数据库的出口带宽为100Mb/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80Mb/s的读操作IO消耗。<div class="note" id="note133345121551"><a name="note133345121551"></a><a name="note133345121551"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul1933411217553"></a><a name="ul1933411217553"></a><ul id="ul1933411217553"><li>限速模式只对全量迁移阶段生效，增量迁移阶段不生效。</li><li>限速模式只针对加入白名单的用户生效，其他用户无法进行设置，您可以通过提交工单申请使用。</li></ul>
+    <div class="fignone" id="fig218884774210"><a name="fig218884774210"></a><a name="fig218884774210"></a><span class="figcap"><b>图1 </b>设置流速模式</span><br><a name="image16983613118"></a><a name="image16983613118"></a><span><img id="image16983613118" src="figures/设置流速模式.png" height="204.186654" width="345.8"></span></div>
+    </li><li>不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如源数据库的出口带宽为100Mb/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80Mb/s的读操作IO消耗。<div class="note" id="note133345121551"><a name="note133345121551"></a><a name="note133345121551"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul1933411217553"></a><a name="ul1933411217553"></a><ul id="ul1933411217553"><li>限速模式只对全量迁移阶段生效，增量迁移阶段不生效。</li><li>您也可以在创建任务后修改流速模式。具体方法请参见<a href="https://support.huaweicloud.com/usermanual-drs/drs_03_0046.html" target="_blank" rel="noopener noreferrer">修改流速模式</a>。</li></ul>
     </div></div>
     </li></ul>
     </td>
@@ -256,8 +257,7 @@ VPN网络（专线网络）适合通过VPN网络（专线网络），实现其�
     <td class="cellrowborder" valign="top" width="84%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0078078071_p137371904213"><a name="zh-cn_topic_0078078071_p137371904213"></a><a name="zh-cn_topic_0078078071_p137371904213"></a>迁移过程中，源数据库端执行的DDL操作在一定程度上会影响数据的迁移能力，为了降低迁移数据的风险，数据复制服务提供了过滤DDL操作的功能。</p>
     <p id="zh-cn_topic_0078078071_p447611311204"><a name="zh-cn_topic_0078078071_p447611311204"></a><a name="zh-cn_topic_0078078071_p447611311204"></a>目前支持默认过滤删除数据库的操作。</p>
     <a name="zh-cn_topic_0078078071_ul182971235135112"></a><a name="zh-cn_topic_0078078071_ul182971235135112"></a><ul id="zh-cn_topic_0078078071_ul182971235135112"><li>是，表示数据迁移过程中不会迁移用户在源数据库端执行的删除数据库的操作。</li><li>否，则表示数据迁移过程中将相关操作迁移到目标库。</li></ul>
-    <div class="note" id="zh-cn_topic_0078078071_note8823203716512"><a name="zh-cn_topic_0078078071_note8823203716512"></a><a name="zh-cn_topic_0078078071_note8823203716512"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1428111735213"><a name="p1428111735213"></a><a name="p1428111735213"></a>该功能只支持过滤DDL的删除数据库操作，不支持过滤存储过程。</p>
-    <a name="zh-cn_topic_0078078071_ul0375143131117"></a><a name="zh-cn_topic_0078078071_ul0375143131117"></a><ul id="zh-cn_topic_0078078071_ul0375143131117"><li>该功能只支持过滤DDL的删除数据库操作，不支持过滤存储过程。</li><li>目前仅MySQL数据库引擎支持过滤DROP DATABASE功能。</li></ul>
+    <div class="note" id="zh-cn_topic_0078078071_note8823203716512"><a name="zh-cn_topic_0078078071_note8823203716512"></a><a name="zh-cn_topic_0078078071_note8823203716512"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p48942034155220"><a name="p48942034155220"></a><a name="p48942034155220"></a>目前仅MySQL数据库引擎支持过滤DROP DATABASE功能。</p>
     </div></div>
     </td>
     </tr>

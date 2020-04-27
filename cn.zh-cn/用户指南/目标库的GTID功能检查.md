@@ -18,11 +18,14 @@
 <tr id="row212432224711"><th class="firstcol" valign="top" width="11%" id="mcps1.2.3.3.1"><p id="p1412462211472"><a name="p1412462211472"></a><a name="p1412462211472"></a><strong id="b111246227470"><a name="b111246227470"></a><a name="b111246227470"></a>告警提示及<strong id="b15891153114115"><a name="b15891153114115"></a><a name="b15891153114115"></a>处理建议</strong></strong></p>
 </th>
 <td class="cellrowborder" valign="top" width="89%" headers="mcps1.2.3.3.1 "><p id="p18705213564"><a name="p18705213564"></a><a name="p18705213564"></a><strong id="b16814162110612"><a name="b16814162110612"></a><a name="b16814162110612"></a>失败原因</strong>：目标数据库GTID未开启。</p>
-<p id="p392115761410"><a name="p392115761410"></a><a name="p392115761410"></a><strong id="b169211057131415"><a name="b169211057131415"></a><a name="b169211057131415"></a>处理建议</strong>：通过修改数据库配置文件将源数据库和目标数据库的GTID开启，重启数据库后生效。</p>
-<p id="p11981216157"><a name="p11981216157"></a><a name="p11981216157"></a>参考命令如下：</p>
-<pre class="codeblock" id="codeblock4526101912151"><a name="codeblock4526101912151"></a><a name="codeblock4526101912151"></a>gtid_mode = on;
+<p id="p392115761410"><a name="p392115761410"></a><a name="p392115761410"></a><strong id="b169211057131415"><a name="b169211057131415"></a><a name="b169211057131415"></a>处理建议</strong>：在确保目标库binlog开启的情况下，通过修改数据库配置文件将源数据库和目标数据库的GTID开启，重启数据库后生效。</p>
+<p id="p11981216157"><a name="p11981216157"></a><a name="p11981216157"></a>开启GTID参考命令如下：</p>
+<pre class="codeblock" id="codeblock1172292453216"><a name="codeblock1172292453216"></a><a name="codeblock1172292453216"></a>gtid_mode = on;
 log_slave_updates = true; 
 enforce_gtid_consistency = on;</pre>
+<p id="p83515435315"><a name="p83515435315"></a><a name="p83515435315"></a>开启binlog参考命令如下：</p>
+<pre class="codeblock" id="codeblock174817154322"><a name="codeblock174817154322"></a><a name="codeblock174817154322"></a>log-bin = mysql-bin
+binlog_gtid_simple_recovery = on。</pre>
 </td>
 </tr>
 </tbody>

@@ -18,7 +18,8 @@
 2.  在“场景选择“页面，分别选择“源数据库来源“和“目标数据库来源“后，单击“下一步“进入“迁移实例“页面。
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
-    >本例中“源数据库来源“可以为“本地自建库“、“本云云数据库“、“本云ECS自建库“或“其他云上数据库“，“目标数据库来源“为“本云云数据库“。  
+    >-   本例中“源数据库来源“可以为“本地自建库“、“本云云数据库“、“本云ECS自建库“或“其他云上数据库“，“目标数据库来源“为“本云云数据库“。  
+    >-   目前不支持自建数据库库到自建数据库的迁移。  
 
 3.  在“迁移实例”页面，填选任务名称、通知收件人信息、描述、迁移实例信息，单击“下一步”。
 
@@ -165,7 +166,7 @@
     <tr id="row1798013414810"><td class="cellrowborder" valign="top" width="22.869999999999997%" headers="mcps1.2.3.1.1 "><p id="p59804420484"><a name="p59804420484"></a><a name="p59804420484"></a>SSL安全连接</p>
     </td>
     <td class="cellrowborder" valign="top" width="77.13%" headers="mcps1.2.3.1.2 "><p id="p10548132911617"><a name="p10548132911617"></a><a name="p10548132911617"></a>通过该功能，用户可以选择是否开启对迁移链路的加密。如果开启该功能，需要用户上传SSL CA根证书。</p>
-    <div class="note" id="note1413165611199"><a name="note1413165611199"></a><a name="note1413165611199"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1413205651918"><a name="p1413205651918"></a><a name="p1413205651918"></a>最大支持上传500KB的证书文件。</p>
+    <div class="note" id="note1413165611199"><a name="note1413165611199"></a><a name="note1413165611199"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul1528919141310"></a><a name="ul1528919141310"></a><ul id="ul1528919141310"><li>最大支持上传500KB的证书文件。</li><li>如果不使用SSL证书，请自行承担数据安全风险。</li></ul>
     </div></div>
     </td>
     </tr>
